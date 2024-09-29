@@ -33,6 +33,7 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
         ItemEditora = new javax.swing.JMenuItem();
         ItemLivro = new javax.swing.JMenuItem();
         ItemExemplar = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         MenuRelatorio = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -78,6 +79,15 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
             }
         });
         MenuCadastro.add(ItemExemplar);
+
+        jMenuItem1.setText("Categoria de Leitor");
+        jMenuItem1.setActionCommand("Categoria de Leitor");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        MenuCadastro.add(jMenuItem1);
 
         jMenuBar1.add(MenuCadastro);
 
@@ -131,6 +141,10 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ItemExemplarActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        new CategoriaLeitor.CadastroCatLeitor().setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -175,5 +189,6 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
     private javax.swing.JMenu MenuCadastro;
     private javax.swing.JMenu MenuRelatorio;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 }
