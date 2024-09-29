@@ -2,6 +2,7 @@ package Livro;
 
 import Editora.*;
 import Autor.*;
+import Livro.Exemplar.*;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -188,7 +189,8 @@ public class CadastroLivro extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        CadastroExemplar cadexem = new CadastroExemplar();
+        cadexem.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
