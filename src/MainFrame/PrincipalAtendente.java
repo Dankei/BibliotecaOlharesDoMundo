@@ -39,6 +39,7 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Atendente");
 
         jButton1.setText("Sair");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -94,6 +95,7 @@ public class PrincipalAtendente extends javax.swing.JFrame {
 
     private void LeitoresItemMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeitoresItemMenuActionPerformed
         // TODO add your handling code here:
+        new Leitor.Listagem().setVisible(true);
     }//GEN-LAST:event_LeitoresItemMenuActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
