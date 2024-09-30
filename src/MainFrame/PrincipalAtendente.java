@@ -34,6 +34,9 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         LeitoresItemMenu = new javax.swing.JMenuItem();
         EmprestimosItemMenu = new javax.swing.JMenuItem();
         ConsultasMenu = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         RelatoriosMenu = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
@@ -65,6 +68,21 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         jMenuBar1.add(CadastrosMenu);
 
         ConsultasMenu.setText("Consultas");
+
+        jMenuItem2.setText("Leitor Por Exemplar");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        ConsultasMenu.add(jMenuItem2);
+
+        jMenuItem3.setText("Exemplar por leitor");
+        ConsultasMenu.add(jMenuItem3);
+
+        jMenuItem4.setText("Comprovante de Empréstimo");
+        ConsultasMenu.add(jMenuItem4);
+
         jMenuBar1.add(ConsultasMenu);
 
         RelatoriosMenu.setText("Relatorios");
@@ -104,6 +122,10 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         this.dispose();
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,5 +172,8 @@ public class PrincipalAtendente extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     // End of variables declaration//GEN-END:variables
 }
