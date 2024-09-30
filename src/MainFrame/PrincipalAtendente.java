@@ -62,6 +62,11 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         CadastrosMenu.add(LeitoresItemMenu);
 
         EmprestimosItemMenu.setText("Emprestimos");
+        EmprestimosItemMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EmprestimosItemMenuActionPerformed(evt);
+            }
+        });
         CadastrosMenu.add(EmprestimosItemMenu);
 
         jMenuBar1.add(CadastrosMenu);
@@ -124,6 +129,7 @@ public class PrincipalAtendente extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
+
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         new Consulta.ExemplarPorLeitor().setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -131,6 +137,12 @@ public class PrincipalAtendente extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         new Consulta.LeitorPorExemplar().setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void EmprestimosItemMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmprestimosItemMenuActionPerformed
+        // TODO add your handling code here:
+        new Emprestimo.Listagem().setVisible(true);
+    }//GEN-LAST:event_EmprestimosItemMenuActionPerformed
+
 
     /**
      * @param args the command line arguments
