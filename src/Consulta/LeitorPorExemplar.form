@@ -35,37 +35,29 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane1" alignment="0" min="-2" pref="414" max="-2" attributes="0"/>
                                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" min="-2" pref="454" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace pref="12" max="32767" attributes="0"/>
-                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane2" min="-2" pref="362" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane2" min="-2" pref="414" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="352" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="352" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -91,7 +83,10 @@
                   <Component id="jScrollPane2" min="-2" pref="253" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -126,7 +121,6 @@
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Selecionar..."/>
-        <Property name="actionCommand" type="java.lang.String" value="Selecionar..."/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
@@ -212,53 +206,50 @@
         <Component class="javax.swing.JTable" name="jTable2">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="6">
-                <Column editable="false" title="C&#xf3;digo" type="java.lang.Integer">
-                  <Data value="54"/>
-                  <Data value="63"/>
-                  <Data value="53"/>
-                  <Data value="64"/>
-                  <Data value="15"/>
+              <Table columnCount="5" rowCount="7">
+                <Column editable="true" title="C&#xf3;digo" type="java.lang.Object">
+                  <Data value="3"/>
+                  <Data value="2"/>
+                  <Data value="1"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
                   <Data value="null"/>
                 </Column>
-                <Column editable="false" title="T&#xed;tulo" type="java.lang.String">
-                  <Data value="C&#xf3;digo Limpo"/>
-                  <Data value="C&#xf3;digo Limpo"/>
-                  <Data value="C&#xf3;digo Limpo"/>
-                  <Data value="C&#xf3;digo Limpo"/>
-                  <Data value="C&#xf3;digo Limpo"/>
+                <Column editable="true" title="Nome" type="java.lang.Object">
+                  <Data value="Eduardo"/>
+                  <Data value="Pedro"/>
+                  <Data value="Daniel"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
                   <Data value="null"/>
                 </Column>
-                <Column editable="false" title="Ano Publica&#xe7;&#xe3;o" type="java.lang.String">
-                  <Data value="2010"/>
-                  <Data value="2010"/>
-                  <Data value="2010"/>
-                  <Data value="2010"/>
-                  <Data value="2010"/>
+                <Column editable="true" title="Data de Empr&#xe9;stimo" type="java.lang.Object">
+                  <Data value="02/03/2024"/>
+                  <Data value="12/12/2023"/>
+                  <Data value="05/12/2023"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
                   <Data value="null"/>
                 </Column>
-                <Column editable="false" title="Data de Compra" type="java.lang.String">
-                  <Data value="21/12/2014"/>
-                  <Data value="10/10/2023"/>
-                  <Data value="21/12/2014"/>
-                  <Data value="21/12/2014"/>
-                  <Data value="21/12/2014"/>
+                <Column editable="true" title="Data de Devolu&#xe7;&#xe3;o" type="java.lang.Object">
+                  <Data value=""/>
+                  <Data value="15/12/2023"/>
+                  <Data value="10/12/2023"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
                   <Data value="null"/>
                 </Column>
-                <Column editable="false" title="Valor Pago" type="java.lang.String">
-                  <Data value="10.00"/>
-                  <Data value="20.00"/>
-                  <Data value="10.00"/>
-                  <Data value="10..0"/>
-                  <Data value="10.00"/>
-                  <Data value="null"/>
-                </Column>
-                <Column editable="false" title="Status" type="java.lang.String">
+                <Column editable="true" title="Status" type="java.lang.Object">
                   <Data value="Emprestado"/>
-                  <Data value="Emprestado"/>
-                  <Data value="Doado/Extraviado"/>
-                  <Data value="Na biblioteca"/>
-                  <Data value="Na biblioteca"/>
+                  <Data value="Devolvido"/>
+                  <Data value="Devolvido"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
                   <Data value="null"/>
                 </Column>
               </Table>
@@ -274,7 +265,15 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Imprimir"/>
+        <Property name="text" type="java.lang.String" value="Imprimir Comprovante"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Selecione um exemplar para exibir o hist&#xf3;rico de leitores ^"/>
       </Properties>
     </Component>
   </SubComponents>

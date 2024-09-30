@@ -36,7 +36,6 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         ConsultasMenu = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
         RelatoriosMenu = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
@@ -78,10 +77,12 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         ConsultasMenu.add(jMenuItem2);
 
         jMenuItem3.setText("Exemplar por leitor");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         ConsultasMenu.add(jMenuItem3);
-
-        jMenuItem4.setText("Comprovante de Empréstimo");
-        ConsultasMenu.add(jMenuItem4);
 
         jMenuBar1.add(ConsultasMenu);
 
@@ -124,8 +125,12 @@ public class PrincipalAtendente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
+        new Consulta.ExemplarPorLeitor().setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        new Consulta.LeitorPorExemplar().setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,6 +179,5 @@ public class PrincipalAtendente extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     // End of variables declaration//GEN-END:variables
 }
