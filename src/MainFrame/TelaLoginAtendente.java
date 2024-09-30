@@ -1,6 +1,7 @@
 package MainFrame;
 
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /*
@@ -54,6 +55,12 @@ public class TelaLoginAtendente extends javax.swing.JDialog {
 
         jLabel2.setText("Senha");
 
+        txtSenha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtSenhaKeyPressed(evt);
+            }
+        });
+
         jButton1.setText("Entrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,17 +77,15 @@ public class TelaLoginAtendente extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(74, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel2)
                                 .addComponent(jLabel1)
                                 .addComponent(txtLogin)
                                 .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(66, 66, 66))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addGap(44, 44, 44)))
+                            .addComponent(jLabel4))
+                        .addGap(66, 66, 66))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addGap(41, 41, 41))))
@@ -130,6 +135,24 @@ public class TelaLoginAtendente extends javax.swing.JDialog {
         //ja volto aqui
      
     }//GEN-LAST:event_formWindowClosed
+
+    private void txtSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSenhaKeyPressed
+        // TODO add your handling code here:
+        
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER){
+                if(!(txtLogin.getText().equals("") && txtSenha.getText().equals(""))){
+            
+            login = txtLogin.getText();
+            senha = txtSenha.getText();
+            logado= true;
+            PrincipalAtendente p1 = new PrincipalAtendente();
+            p1.setVisible(true);
+            this.dispose();
+        }else{
+            JOptionPane.showMessageDialog(null, "Dados Incorretos");
+        }
+        }
+    }//GEN-LAST:event_txtSenhaKeyPressed
 
     /**
      * @param args the command line arguments

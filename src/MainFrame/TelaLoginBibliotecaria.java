@@ -4,6 +4,7 @@
  */
 package MainFrame;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -48,6 +49,12 @@ public class TelaLoginBibliotecaria extends javax.swing.JDialog {
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        txtSenha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtSenhaKeyPressed(evt);
             }
         });
 
@@ -113,6 +120,26 @@ public class TelaLoginBibliotecaria extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(null, "Dados Incorretos");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSenhaKeyPressed
+        // TODO add your handling code here:
+        
+         if(evt.getKeyCode()== KeyEvent.VK_ENTER){
+                if(!(txtLogin.getText().equals("") && txtSenha.getText().equals(""))){
+            
+            login = txtLogin.getText();
+            senha = txtSenha.getText();
+            logado= true;
+            PrincipalAtendente p1 = new PrincipalAtendente();
+            p1.setVisible(true);
+            this.dispose();
+        }else{
+            JOptionPane.showMessageDialog(null, "Dados Incorretos");
+        }
+        }
+        
+        
+    }//GEN-LAST:event_txtSenhaKeyPressed
 
     /**
      * @param args the command line arguments
