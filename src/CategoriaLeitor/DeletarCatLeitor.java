@@ -38,7 +38,7 @@ public class DeletarCatLeitor extends javax.swing.JFrame {
         setLocationByPlatform(true);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("Deseja inativar este assunto?");
+        jLabel1.setText("Deseja inativar esta categoria?");
 
         jButton1.setText("Inativar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +67,7 @@ public class DeletarCatLeitor extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(25, 25, 25))
+                .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

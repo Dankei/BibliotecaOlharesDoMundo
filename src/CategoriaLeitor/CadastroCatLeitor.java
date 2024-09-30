@@ -172,7 +172,6 @@ public class CadastroCatLeitor extends javax.swing.JFrame {
 
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
         // TODO add your handling code here:
-      new PrincipalBibliotecaria().setVisible(true);
       this.dispose();
       
 
