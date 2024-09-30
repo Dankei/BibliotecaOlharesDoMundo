@@ -34,6 +34,8 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         LeitoresItemMenu = new javax.swing.JMenuItem();
         EmprestimosItemMenu = new javax.swing.JMenuItem();
         ConsultasMenu = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         RelatoriosMenu = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
@@ -70,6 +72,23 @@ public class PrincipalAtendente extends javax.swing.JFrame {
         jMenuBar1.add(CadastrosMenu);
 
         ConsultasMenu.setText("Consultas");
+
+        jMenuItem2.setText("Leitor Por Exemplar");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        ConsultasMenu.add(jMenuItem2);
+
+        jMenuItem3.setText("Exemplar por leitor");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        ConsultasMenu.add(jMenuItem3);
+
         jMenuBar1.add(ConsultasMenu);
 
         RelatoriosMenu.setText("Relatorios");
@@ -110,10 +129,20 @@ public class PrincipalAtendente extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        new Consulta.ExemplarPorLeitor().setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        new Consulta.LeitorPorExemplar().setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
     private void EmprestimosItemMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmprestimosItemMenuActionPerformed
         // TODO add your handling code here:
         new Emprestimo.Listagem().setVisible(true);
     }//GEN-LAST:event_EmprestimosItemMenuActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -160,5 +189,7 @@ public class PrincipalAtendente extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     // End of variables declaration//GEN-END:variables
 }
