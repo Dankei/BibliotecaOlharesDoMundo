@@ -36,8 +36,10 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
         ItemExemplar = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         MenuRelatorio = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Bibliotecaria");
 
         jButton1.setText("Sair");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -99,6 +101,15 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
         jMenuBar1.add(MenuCadastro);
 
         MenuRelatorio.setText("Relatorio");
+
+        jMenuItem2.setText("Relatorio");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        MenuRelatorio.add(jMenuItem2);
+
         jMenuBar1.add(MenuRelatorio);
 
         setJMenuBar(jMenuBar1);
@@ -165,6 +176,11 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        new Relatorio.Principal1Biliotecaria().setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -211,5 +227,6 @@ public class PrincipalBibliotecaria extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     // End of variables declaration//GEN-END:variables
 }
