@@ -67,6 +67,11 @@ public class Listagem extends javax.swing.JFrame {
 
         jButton3.setText("Inativar");
         jButton3.setActionCommand("Inativar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         checkbox1.setLabel("Exibir apenas ativos");
         checkbox1.setState(true);
@@ -119,6 +124,11 @@ public class Listagem extends javax.swing.JFrame {
         // TODO add your handling code here:
         new Leitor.Cadastro().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        new Leitor.AvisoInativar(this, rootPaneCheckingEnabled).setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
