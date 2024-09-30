@@ -2,34 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/CategoriaLeitor/DeletarCatLeitor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/CategoriaLeitor/CadastroCatLeitor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Assunto/NovoAssunto.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Assunto/EditarAssunto.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/CategoriaLeitor/EditarCatLeitor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/NovoLivro.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Selecao/SelecaoAssunto.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/CadastroLivro.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Editora/EditarEditora.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Exemplar/EditarExemplar.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Selecao/SelecaoAutor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Exemplar/CadastroExemplar.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Exemplar/DeletarExemplar.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/MainFrame/Home.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Autor/EditarAutor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Autor/DeletarAutor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/EditarLivro.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Autor/CadastroAutor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Assunto/DeletarAssunto.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/CategoriaLeitor/NovaCatLeitor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Editora/DeletarEditora.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Autor/NovoAutor.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Editora/CadastroEditora.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Exemplar/NovoExemplar.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Editora/NovoEditora.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/DeletarLivro.java</file>
-            <file>file:/C:/Users/admin/Documents/NetBeansProjects/JavaApplication1/src/Livro/Selecao/SelecaoEditora.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
